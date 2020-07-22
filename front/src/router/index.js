@@ -39,6 +39,11 @@ import PartnerContracts from "../pages/partnerContracts/PartnerContracts";
 import EvidentionWorkspace from "../pages/workspace/EvidentionWorkspace";
 import Services from "../pages/services/Services";
 import ReportsPartner from "../pages/Excel/ReportsPartner";
+import TabelarniSelekt from "../pages/components/TabelarniSelekt";
+import TabelarnoUpravljanje from "../pages/components/TabelarnoUpravljanje";
+import DialogZaDodavanje from "../pages/components/DialogZaDodavanje";
+import DialogZaIzmjenu from "../pages/components/DialogZaIzmjenu";
+import DialogZaDetalje from "../pages/components/DialogZaDetalje";
 
 Vue.use(Router)
 
@@ -118,6 +123,11 @@ function routes() {
     {path: '/partner-evidentions', name: 'Evidencije partnera', component: PartnerEvidentions, meta: {forAuth: true}},
     {path: '/evidentions', name: 'Evidencije', component: EvidentionWorkspace, meta: {forAuth: true}},
     {path: '/serviceTypes', name: 'Tipovi usluga', component: Services, meta: {forAuth: true}},
+    {path: '/dialog-choose-item', name: 'Tabelarni selekt', component: TabelarniSelekt, meta: {forAuth: true}},
+    {path: '/table-management', name: 'Tabelarno upravljanje', component: TabelarnoUpravljanje, meta: {forAuth: true}},
+    {path: '/add-component', name: 'Dialog za dodavanje', component: DialogZaDodavanje, meta: {forAuth: true}},
+    {path: '/edit-component', name: 'Dialog za izmjenu', component: DialogZaIzmjenu, meta: {forAuth: true}},
+    {path: '/details-component', name: 'Dialog za detalje', component: DialogZaDetalje, meta: {forAuth: true}},
   ]
   return routes
 }

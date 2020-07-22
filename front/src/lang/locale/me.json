@@ -384,6 +384,7 @@
     "active": "Aktivnost"
   },
   "drawer": {
+    "components": "Komponente",
     "client": "Klijent",
     "clients": "Klijenti",
     "serviceTypes": "Tipovi usluga",

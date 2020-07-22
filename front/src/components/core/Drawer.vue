@@ -10,7 +10,7 @@
     floating
     mobile-break-point="991"
     persistent
-    width="275"
+    width="300"
   >
     <template v-slot:img="attrs">
       <v-img
@@ -187,7 +187,6 @@
                 },
               ],
             },
-
             /* {
                 to: '/table-list',
                 icon: 'mdi-clipboard-outline',
@@ -228,6 +227,38 @@
               to: '/reports',
               icon: 'mdi-clipboard-outline',
               text: 'Izvještaji'
+            },
+            {
+              to: '',
+              icon: 'mdi-cog-sync',
+              text: this.$t('drawer.components'),
+              sub_pages: [
+                {
+                  to: '/dialog-choose-item',
+                  icon: 'mdi-table-check',
+                  text: 'Tabelarni selekt'
+                },
+                {
+                  to: '/table-management',
+                  icon: 'mdi-google-spreadsheet',
+                  text: 'Tabelarno upravljanje'
+                },
+                {
+                  to: '/add-component',
+                  icon: 'mdi-plus',
+                  text: 'Dialog za dodavanje'
+                },
+                {
+                  to: '/edit-component',
+                  icon: 'mdi-pencil-outline',
+                  text: 'Dialog za izmjenu'
+                },
+                {
+                  to: '/details-component',
+                  icon: 'mdi-account-details',
+                  text: 'Dialog za detalje'
+                },
+              ],
             },
           ]
         } else {
